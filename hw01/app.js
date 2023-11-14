@@ -1,14 +1,13 @@
-const headerList = ['序號', '班級', '學號', '姓名', 'GitHub', '作業一', '作業二', '作業三', '作業四', '作業五', '作業六', '作業七', '作業八',	'作業九',	'作業十'];
-const classListOptions = ['資工系', '資工所', '電資AI', '電資資安', '創新AI'];
+const classOptions = ['資工系', '資工所', '電資AI', '電資資安', '創新AI'];
 const idFirstPartOptions = ["111", "112"];
 const idSecondPartOptions = ["590", "598", "C52", "C53", "C71"];
 const characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-function generateRandomClass() {
-  return classListOptions[Math.floor(Math.random() * classListOptions.length)];
+function getRandomClass() {
+  return classOptions[Math.floor(Math.random() * classOptions.length)];
 }
 
-function generateRandomId() {
+function getRandomId() {
   const firstPart = idFirstPartOptions[Math.floor(Math.random() * idFirstPartOptions.length)];
   const secondPart = idSecondPartOptions[Math.floor(Math.random() * idSecondPartOptions.length)];
   const thirdPart = (Math.floor(Math.random() * 999) + 1).toString().padStart(3, '0');
@@ -16,7 +15,7 @@ function generateRandomId() {
   return firstPart + secondPart + thirdPart;
 }
 
-function generateRandomGithubId() {
+function getRandomGithubId() {
     let result = '';
 
     for (let i = 0; i < 10; i++) {
@@ -27,7 +26,7 @@ function generateRandomGithubId() {
     return result;
 }
 
-function generateRandomScoreList() {
+function getRandomScoreList() {
   const scoreList = [];
 
   for (let i = 0; i < 10; i++) {
@@ -50,11 +49,11 @@ function generateDummyCsvTable() {
 
   for (let index = 1; index <= 120; index++) {
     let row = table.insertRow();
-    let className = generateRandomClass();
-    let studentId = generateRandomId();
+    let className = getRandomClass();
+    let studentId = getRandomId();
     let studentName = "我是誰";
-    let githubId = generateRandomGithubId();
-    let scoreList = generateRandomScoreList();
+    let githubId = getRandomGithubId();
+    let scoreList = getRandomScoreList();
 
     let rowItems = [index, className, studentId, studentName, githubId];
 
@@ -84,11 +83,11 @@ function generateAppleScoreboardTable() {
 
   for (let index = 1; index <= 120; index++) {
     let row = table.insertRow();
-    let className = generateRandomClass();
-    let studentId = generateRandomId();
+    let className = getRandomClass();
+    let studentId = getRandomId();
     let studentName = "我是誰";
-    let githubId = generateRandomGithubId();
-    let scoreList = generateRandomScoreList();
+    let githubId = getRandomGithubId();
+    let scoreList = getRandomScoreList();
 
     let rowItems = [index, className, studentId, studentName, githubId];
 
