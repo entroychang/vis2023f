@@ -40,6 +40,9 @@ function generateDummyCsvTable() {
   let divElement = document.getElementById("dummy-csv-table");
   let table = document.createElement("table");
 
+  // 新增以下兩行
+  const headerList = ['序號', '班級', '學號', '姓名', 'GitHub', '作業一', '作業二', '作業三', '作業四', '作業五', '作業六', '作業七', '作業八', '作業九', '作業十'];
+
   let header = table.createTHead();
   let headerRow = header.insertRow();
 
@@ -73,6 +76,9 @@ function generateDummyCsvTable() {
 function generateAppleScoreboardTable() {
   let divElement = document.getElementById("apple-scoreboard-table");
   let table = document.createElement("table");
+
+  // 新增以下兩行
+  const headerList = ['序號', '班級', '學號', '姓名', 'GitHub', '作業一', '作業二', '作業三', '作業四', '作業五', '作業六', '作業七', '作業八', '作業九', '作業十'];
 
   let header = table.createTHead();
   let headerRow = header.insertRow();
