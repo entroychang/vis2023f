@@ -1,0 +1,14 @@
+{
+  "name": "87a64b732d779e2a",
+  "main": "87a64b732d779e2a@163.js",
+  "version": "163.0.0",
+  "homepage": "https://observablehq.com/d/87a64b732d779e2a",
+  "author": {
+    "name": "entroy's Workspace",
+    "url": "https://observablehq.com/@entroy-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
