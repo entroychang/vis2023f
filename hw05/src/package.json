@@ -1,0 +1,14 @@
+{
+  "name": "1dc383bdaa983624",
+  "main": "1dc383bdaa983624@52.js",
+  "version": "52.0.0",
+  "homepage": "https://observablehq.com/d/1dc383bdaa983624",
+  "author": {
+    "name": "entroy's Workspace",
+    "url": "https://observablehq.com/@entroy-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
