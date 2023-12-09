@@ -171,43 +171,21 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <h1>作業 04</h1>
+      <h1>作業 05</h1>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      src 資料夾 <input type="button" name="back" onclick="location.href='https://github.com/Kiri487/vis2023f/tree/main/hw04'" value="開啟 hw4 src"> 
+      該次作業程式碼，請放在 https://github.com/<span style="color:red;">你的帳號</span>/vis2023f/hw<span style="color:red;">05</span>/src/ 檔案夾。
     </div>
   </div>
-
-    <!-- ------------------------------------------------>
-    <div class="row hw12">
-      <div class="col-md-12 twenty">
-        <h4>Demo 網頁</h4>
-      </div>
-    </div>
-  
-    <!-- ------------------------------------------------>
-    <div class="row hw12">
-      <div class="col-md-12 twenty">
-        <a href="https://Kiri487.github.io/vis2023f/hw04/src-sunburst/">Simple baseline & Medium baseline</a>
-        <hr>
-        <a href="https://Kiri487.github.io/vis2023f/hw04/src-strong/">Strong baseline</a>
-        </div>
-    </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      這次的作業要呈現問卷中的兩個問題，我選擇使用旭日圖的方式，這種圖表不僅能清晰表達層級關係，還能使觀者更容易理解整體內容，就像是一種升華版的圓餅圖。
-
-在實作的過程中，我發現旭日圖的製作相對複雜，因此我積極參考了助教提供的範例程式碼。儘管如此，我仍然努力理解每個部分的功能，以確保我能夠掌握整個製作過程。<br>
-
-這次的學習經驗讓我更深入地了解了資料視覺化的重要性，特別是在呈現層級結構時。透過旭日圖，我成功地將問卷中的兩個問題以一種直觀且美觀的方式呈現出來，這使得觀眾更容易抓住重點並理解其中的關聯性。<br>
-
-總的來說，雖然在學習過程中遇到了一些挑戰，但最終的成果讓我感到滿意。我相信這次的作業將有效地傳達問卷結果，同時也提高了我對資料視覺化工具的熟練程度。<br>
+      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
     </div>
   </div>
 
@@ -223,29 +201,19 @@
         </tr>
         <tr>
           <td rowspan="7" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
           <td id='m1'>2</td>
-          <td>Simple baseline 1 - 完成旭日圖</td>
+          <td>Simple baseline - 描述、描述、描述</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
-          <td id='m2'>1</td>
-          <td>Simple baseline 2 - 完成頁面路徑</td>
+          <td id='m2'>6</td>
+          <td>Medium baseline - 描述、描述、描述 </td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
           <td id='m3'>2</td>
-          <td>Medium baseline 1 - 加入Tooltip</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
-          <td id='m4'>2</td>
-          <td>Medium baseline 2 - 完成結論</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox5" checked></td>
-          <td id='m5'>3</td>
-          <td>Strong baseline - 將兩個問題之間的意義以圖表呈現（可互動）</td>
+          <td>Strong baseline - 描述、描述、描述 </td>
         </tr>
       </table>
     </div>
@@ -254,30 +222,13 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-       <h4>Simple baseline & Medium baseline</h4>
-    </div>
-  </div>
-  
-  <div class="row hw12">
-    <div class="col-md-12 twenty">
-      <iframe width="100%" height="1000" frameborder="0" style="background-color: #FFFFFF"
-  src="https://observablehq.com/d/87a64b732d779e2a"></iframe>
+      <video id="video1" style="width:100%;max-width:100%;" controls="">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12">
-    <div class="col-md-12 twenty">
-       <h4>Strong baseline</h4>
-    </div>
-  </div>
-  
-  <div class="row hw12">
-    <div class="col-md-12 twenty">
-      <iframe width="100%" height="1000" frameborder="0" style="background-color: #FFFFFF"
-  src="https://observablehq.com/d/87a64b732d779e2a"></iframe>
-    </div>
-  </div>
 
   <!-- ------------------------------------------------>
 
@@ -314,14 +265,6 @@
 
     if (d3.select("#myCheckbox3").property("checked")){
       score += parseInt(d3.select('#m3').html());   
-    }
-
-    if (d3.select("#myCheckbox4").property("checked")){
-      score += parseInt(d3.select('#m4').html());   
-    }
-
-    if (d3.select("#myCheckbox5").property("checked")){
-      score += parseInt(d3.select('#m5').html());   
     }
 
     d3.select("#myTotal").html(score);    
