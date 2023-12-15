@@ -178,7 +178,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      該次作業程式碼，請放在 https://github.com/<span style="color:red;">你的帳號</span>/vis2023f/hw<span style="color:red;">08</span>/src/ 檔案夾。
+      src 資料夾 <input type="button" name="back" onclick="location.href='https://github.com/entroychang/vis2023f/tree/main/hw08/src'" value="開啟 hw8 src"> 
     </div>
   </div>
 
@@ -201,21 +201,101 @@
         </tr>
         <tr>
           <td rowspan="7" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>2</td>
-          <td>Simple baseline - 描述、描述、描述</td>
+          <td>Simple baseline - 使用執行檔觀看有氧漫遊圖表回答問題</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
-          <td id='m2'>6</td>
-          <td>Medium baseline - 描述、描述、描述 </td>
+          <td id='m2'>2</td>
+          <td>Simple baseline - 使用執行檔觀看主題遊圖表回答問題</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述、描述、描述 </td>
+          <td>Medium baseline - 觀察有氧漫遊的資料回答問題</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td id='m4'>1</td>
+          <td>Medium baseline - 觀察主題遊的資料集回答問題</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox5"></td>
+          <td id='m5'>2</td>
+          <td>Strong baseline - 參考執行檔製作出自己的虛擬可視化圖表</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox6"></td>
+          <td id='m6'>1</td>
+          <td>Strong baseline - 成功讀取有氧漫遊、主題遊資料並呈現</td>
         </tr>
       </table>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4>Simple baseline</h4>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4>使用影片觀看有氧漫遊圖表回答問題 (2pt)</h4><br>
+      <p>
+        透過觀察虛擬視覺化圖表，請問 <br>
+        Q1. 回答數總計最高的是哪個問題哪個選項? (1pt) <br>
+        A: 如果健康數據達標能兌換獎勵會提升我使用這個程式的意願 - 非常同意<br>
+        Q2. 回答數總計最低的是哪個問題哪個選項? (1pt) <br>
+        A: 如果健康數據達標能兌換獎勵會提升我使用這個程式的意願 - 非常不同意、不同意<br><br>
+      </p>
+      <h4>使用執行檔觀看主題遊圖表回答問題 (2pt)</h4><br>
+      <p>
+        透過觀察虛擬視覺化圖表，請問 <br>
+        Q1. 平均時間最快完成的組別是哪一組? (0.5pt) <br>
+        A: 細看表格，我們可以發現第 14 組的排名最低，也就是說他們完成任務所花的時間最少。<br>
+        Q2. 平均時間最慢完成的組別是哪一組? (0.5pt) <br>
+        A: 如果我們仔細觀察表格，會發現第 11 組的排名最高，也就是他們完成任務所花的時間最長。<br>
+        Q3. 你從圖表中觀察到什麼? (1pt) <br>
+        A: 大多數組別的平均花費時間都分佈在 5 到 13 分鐘之間。<br>
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4>Medium baseline</h4>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4>觀察有氧漫遊的資料回答問題(2pt) </h4><br>
+      <p>
+        透過觀察虛擬視覺化圖表，請問 <br>
+        Q1. 經過你的觀察，表中的回覆總數大約落在多少? (1pt) <br>
+        A: 170、180 左右<br>
+        Q2. 經過你的推斷，甚麼原因可能造成其與實際修課人數有落差? (1pt) <br>
+        A: APP 不好用，導致使用者不知道要填問卷。<br><br>
+      </p>
+      <h4>使用執行檔觀看主題遊圖表以及主題遊資料回答問題 (1pt)</h4><br>
+      <p>
+        透過觀察虛擬視覺化圖表以及主題遊資料集，請問<br>
+        Q1. 根據資料集收集到的資料，你覺得還可以做成什麼樣的虛擬視覺化圖表? (1pt) <br>
+        A: 箱形圖 趨勢圖 雷達圖 散點圖 長條圖<br>
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4>Strong baseline</h4>
     </div>
   </div>
 
@@ -227,8 +307,6 @@
       </video>
     </div>
   </div>
-
-  <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
 
@@ -247,7 +325,6 @@
   d3.select("#myCheckbox4").on("change",update);
   d3.select("#myCheckbox5").on("change",update);
   d3.select("#myCheckbox6").on("change",update);
-  d3.select("#myCheckbox7").on("change",update);
 
   update();
   
@@ -265,6 +342,18 @@
 
     if (d3.select("#myCheckbox3").property("checked")){
       score += parseInt(d3.select('#m3').html());   
+    }
+
+    if (d3.select("#myCheckbox4").property("checked")){
+      score += parseInt(d3.select('#m4').html());   
+    }
+
+    if (d3.select("#myCheckbox5").property("checked")){
+      score += parseInt(d3.select('#m5').html());   
+    }
+
+    if (d3.select("#myCheckbox6").property("checked")){
+      score += parseInt(d3.select('#m6').html());   
     }
 
     d3.select("#myTotal").html(score);    
